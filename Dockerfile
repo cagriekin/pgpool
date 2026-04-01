@@ -29,7 +29,7 @@ RUN ./configure \
     --with-pam \
     && make && make install
 
-FROM dhi.io/debian-base:trixie
+FROM debian:trixie-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
