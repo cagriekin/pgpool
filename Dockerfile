@@ -1,4 +1,4 @@
-FROM dhi.io/debian-base:trixie AS builder
+FROM debian:trixie AS builder
 
 ARG PGPOOL_VERSION
 RUN test -n "$PGPOOL_VERSION" || (echo "PGPOOL_VERSION build arg is required" && exit 1)
